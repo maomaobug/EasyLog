@@ -1,7 +1,7 @@
 # EasyLog
 And Android Log that automatically use the file name and line number as the tag.
 
-##Usage
+##Import
 ###1. In your module *build.gradle* file:
 ```java
 repositories {
@@ -19,4 +19,21 @@ dependencies {
     
     compile 'me.zhanghailin.easylog:easylog:1.0.0'
 }
+```
+##Usage
+```java
+public class MainActivity extends ActionBarActivity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+
+        EasyLog.e("sample18");
+    }
+}
+```
+output:
+```java
+03-27 14:03:11.513      681-681/me.zhanghailin.sample E/MainActivity.java#18﹕ sample18
 ```
