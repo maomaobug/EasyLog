@@ -1,5 +1,5 @@
 # EasyLog
-An Android Log that automatically use the file name and line number as the tag.
+An Android Log that automatically set the file name and line number as the tag.
 
 ##Import
 ###1. In your module *build.gradle* file:
